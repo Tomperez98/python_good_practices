@@ -24,21 +24,17 @@ jobs:
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v3
 
-      - name: Run test suite
-        run: |
-          pipenv run test -
-
       - name: Run flake8
         run: |
-          pipenv run flake8 .
+          flake8 .
 
       - name: Run mypy
         run: |
-          pipenv run mypy .
+          mypy .
 
       - name: Run isort
         run: |
-          pipenv run isort . --profile=black --line-length=79
+          isort . --profile=black --line-length=79
 
       - name: commit isort changes
         run: |
