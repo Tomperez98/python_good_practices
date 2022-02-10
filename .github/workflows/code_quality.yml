@@ -35,15 +35,3 @@ jobs:
       - name: Run isort
         run: |
           isort . --profile=black --line-length=79
-
-      - name: commit isort changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A && git diff-index --cached --quiet HEAD || git commit -m "apply isort format change"
-
-      - name: push isort changes
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          github_token: ${{ secrets.AUTOCOMMIT_TOKEN }}
-          branch: ${{ github.ref }}
