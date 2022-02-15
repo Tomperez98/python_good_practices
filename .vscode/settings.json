@@ -1,0 +1,33 @@
+{
+    "autoDocstring.startOnNewLine": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.minimap.enabled": true,
+    "editor.mouseWheelZoom": true,
+    "editor.rulers": [
+        79,
+        120
+    ],
+    "git.autofetch": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "79"
+    ],
+    "python.languageServer": "Pylance",
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "python.analysis.diagnosticMode": "workspace",
+    "notebook.lineNumbers": "on",
+    "workbench.editor.showTabs": true,
+    "python.linting.flake8Enabled": true
+}
